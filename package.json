@@ -1,0 +1,19 @@
+{
+  "author": "Zack Creach",
+  "scripts": {
+    "start": "gulp sprites"
+  },
+  "devDependencies": {
+    "del": "3.0.0",
+    "glob": "7.1.2",
+    "gulp": "3.9.1",
+    "gulp-rename": "1.2.2",
+    "gulp-size": "2.1.0",
+    "gulp-svg-sprite": "1.3.7",
+    "gulp-svg2png": "2.0.2",
+    "gulp-svgmin": "1.2.4",
+    "open": "0.0.5",
+    "path": "0.12.7",
+    "size": "1.0.0"
+  }
+}
