@@ -53,7 +53,7 @@ A gulp-based tool to assemble all your SVG sprites into a single spritesheet tha
 
 ## Implementation in HTML
 ```html
-<svg class="icon icon__medium icon__coral-light">
+<svg class="icon icon__inline icon__medium icon__coral-light">
   <title>Cool Icon</title>
   <use xlink:href="your/images/directory/spritesheet.svg#original_filename"></use>
 </svg>
