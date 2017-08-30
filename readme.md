@@ -1,11 +1,11 @@
 # Spritesheeter
 
-A gulp-based tool to assemble all your sprites into a single spritesheet that can be referenced by xlink hrefs and styled with CSS.
+A gulp-based tool to assemble all your SVG sprites into a single spritesheet that can be referenced by xlink hrefs and styled with CSS.
 
 ## Creating a spritesheet
 
 1. Run `npm install`
-2. Run `npm start drag` (this creates an input folder and opens it for drag/drop)
+2. Run `npm run drag` (this creates an input folder and opens it for drag/drop)
 3. Throw your svgs into the input folder
 4. run `npm start` to create your spritesheet!
 5. Create CSS selectors and implement in your HTML or JSX (examples below)
