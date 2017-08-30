@@ -1,6 +1,10 @@
 {
+  "name": "spritesheeter",
   "author": "Zack Creach",
+  "description": "A gulp-based tool to assemble all your sprites into a single spritesheet that can be referenced by xlink hrefs and styled via CSS.",
+  "version": "1.0.0",
   "scripts": {
+    "drag": "mkdir input && open input",
     "start": "gulp sprites"
   },
   "devDependencies": {

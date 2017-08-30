@@ -1,10 +1,10 @@
-const gulp = require('gulp'),
-path = require('path'),
-open = require('open'),
-glob = require('glob'),
-size = require('gulp-size'),
-svgmin = require('gulp-svgmin'),
-svgSprite = require('gulp-svg-sprite');
+const gulp = require('gulp');
+const path = require('path');
+const open = require('open');
+const glob = require('glob');
+const size = require('gulp-size');
+const svgmin = require('gulp-svgmin');
+const svgSprite = require('gulp-svg-sprite');
 
 gulp.task('sprites', () => {
   const svgSource = './input';

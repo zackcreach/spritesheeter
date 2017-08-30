@@ -1,14 +1,16 @@
 # Spritesheeter
 
-A gulp-based tool to assemble all your sprites into a single spritesheet that can be referenced by xlink hrefs and styled via CSS.
+A gulp-based tool to assemble all your sprites into a single spritesheet that can be referenced by xlink hrefs and styled with CSS.
 
 ## Creating a spritesheet
 
 1. Run `npm install`
-2. Throw your svgs into the input folder
-3. run `npm start` to create your spritesheet!
-4. Create your CSS selectors (size & color example below)
+2. Run `npm start drag` (this creates an input folder and opens it for drag/drop)
+3. Throw your svgs into the input folder
+4. run `npm start` to create your spritesheet!
+5. Create CSS selectors and implement in your HTML or JSX (examples below)
 
+## CSS Example Selectors
 ```css
 /* Icon global attributes */
 
@@ -49,8 +51,6 @@ A gulp-based tool to assemble all your sprites into a single spritesheet that ca
 }
 ```
 
-5. Implement using xlink (see examples below)
-
 ## Implementation in HTML
 ```html
 <svg class="icon icon__medium icon__coral-light">
@@ -66,3 +66,7 @@ A gulp-based tool to assemble all your sprites into a single spritesheet that ca
   <use xlinkHref="your/images/directory/spritesheet.svg#original_filename"></use>
 </svg>
 ```
+
+6. Enjoy your new spritesheet!
+
+Once uploaded/relocated, run `gulp clean-output` and/or `gulp clean-input` to remove working files respectively.
