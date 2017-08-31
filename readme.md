@@ -4,11 +4,13 @@ A gulp-based tool to assemble all your SVG sprites into a single spritesheet tha
 
 ## Creating a spritesheet
 
-1. Run `npm install`
-2. Run `npm run drag` (this creates an input folder and opens it for drag/drop)
-3. Throw your svgs into the input folder
-4. run `npm start` to create your spritesheet!
-5. Create CSS selectors and implement in your HTML or JSX (examples below)
+0. Clone repository by running `git clone https://github.com/zackcreach/spritesheeter.git`
+1. CD into new spritesheeter directory
+2. Run `npm install`
+3. Run `npm run drag` (this creates an input folder and opens it for drag/drop)
+4. Throw your svgs into the input folder
+5. run `npm start` to create your spritesheet!
+6. Create CSS selectors and implement in your HTML or JSX (examples below)
 
 ## CSS Example Selectors
 ```css
@@ -68,6 +70,6 @@ A gulp-based tool to assemble all your SVG sprites into a single spritesheet tha
 </svg>
 ```
 
-6. Enjoy your new spritesheet!
+Enjoy your new spritesheet!
 
 Once uploaded/relocated, run `gulp clean-output` and/or `gulp clean-input` to remove working files respectively.

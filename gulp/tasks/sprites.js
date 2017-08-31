@@ -17,7 +17,7 @@ gulp.task('sprites', () => {
         .pipe(size({showFiles: true, title: svgDest}))
         .pipe(svgmin({js2svg: {pretty: true}}))
         .pipe(gulp.dest(svgDest))
-        .pipe(open('svgDest'));
+        .pipe(open(svgDest));
     })
   });
 
