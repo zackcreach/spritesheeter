@@ -18,7 +18,6 @@ A gulp-based tool to assemble all your SVG sprites into a single spritesheet tha
 	overflow: hidden;
 }
 
-
 /* Icon sized proportionally with text */
 
 .icon__inline {
@@ -28,9 +27,12 @@ A gulp-based tool to assemble all your SVG sprites into a single spritesheet tha
 	vertical-align: -0.15em;
 }
 
-
 /* Icon sizing */
 
+.icon__small {
+	width: 20px;
+	height: 20px;
+}
 .icon__medium {
 	width: 30px;
 	height: 30px;
@@ -40,11 +42,10 @@ A gulp-based tool to assemble all your SVG sprites into a single spritesheet tha
 	height: 40px;
 }
 
-
 /* Icon coloring */
 
-.icon__coral-light {
-	fill: #EE6157;
+.icon__green {
+	fill: #BADA55;
 }
 .icon__black {
 	fill: #000000;
@@ -53,7 +54,7 @@ A gulp-based tool to assemble all your SVG sprites into a single spritesheet tha
 
 ## Implementation in HTML
 ```html
-<svg class="icon icon__inline icon__medium icon__coral-light">
+<svg class="icon icon__inline icon__green">
   <title>Cool Icon</title>
   <use xlink:href="your/images/directory/spritesheet.svg#original_filename"></use>
 </svg>
