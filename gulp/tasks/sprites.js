@@ -2,13 +2,15 @@ const gulp = require('gulp');
 const path = require('path');
 const open = require('open');
 const glob = require('glob');
+const del = require('del');
 const size = require('gulp-size');
 const svgmin = require('gulp-svgmin');
 const svgSprite = require('gulp-svg-sprite');
 
+const svgSource = './input';
+const svgDest = './output';
+
 gulp.task('sprites', () => {
-  const svgSource = './input';
-  const svgDest = './output';
 
   return glob(svgSource, function(err, dirs) {
     dirs.forEach(function(dir) {
