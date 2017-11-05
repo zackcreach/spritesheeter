@@ -11,11 +11,7 @@ const svgSource = './input';
 const svgDest = './output';
 
 gulp.task('sprites', () => {
-
-  const svgSource = './input';
-  const svgDest = './output';
-
-  return glob(svgSource, function(err, dirs) {
+  return glob(`${svgSource}*`, function(err, dirs) {
     dirs.forEach(function(dir) {
       gulp.src(path.join(dir, '*.svg'))
         .pipe(svgSprite(makeSvgSpriteOptions(dir)))
@@ -25,7 +21,6 @@ gulp.task('sprites', () => {
         .pipe(open(svgDest));
     })
   });
-
   function makeSvgSpriteOptions(dirPath) {
     return {
       mode: {
