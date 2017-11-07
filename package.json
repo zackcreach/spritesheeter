@@ -4,7 +4,9 @@
   "description": "Spritesheeter – A gulp-based tool to assemble all your sprites into a single spritesheet that can be referenced by xlink hrefs and styled via CSS.",
   "version": "1.0.0",
   "scripts": {
-    "drag": "echo 'Creating input and output directories..' && mkdir output && mkdir input && open input",
+    "drag": "echo 'Confirming input and output directories..' && npm run input && npm run output && open input",
+    "input": "if [ ! -d 'input' ]; then mkdir input; fi",
+    "output": "if [ ! -d 'output' ]; then mkdir output; fi",
     "start": "gulp sprites"
   },
   "devDependencies": {
